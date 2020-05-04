@@ -6,7 +6,7 @@
 
 .clearfix::after {
   content: "";
-  display: block;
+  display: inline-block;
   clear: both;
 }
 
@@ -63,13 +63,17 @@ main{
 
 @media screen and (max-width:768px) {
   main{
-    width:90%;
+    width:100%;
     margin:50px auto;
   }
   .step-box{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
     margin-bottom:20px;
   }
   .step-box:last-child,{
     margin-bottom:0;
   }
 }
+
